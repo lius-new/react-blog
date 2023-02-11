@@ -1,0 +1,87 @@
+# 测试Rest Client
+GET https://www.baidu.com
+
+
+# 这个是分隔符
+###
+
+### 
+# 测试/user/add 接口
+GET http://localhost:3000/user/add HTTP/1.1
+
+### 
+# 测试/user/list 接口
+GET  http://localhost:3000/user/list HTTP/1.1
+
+###
+# 测试登录接口
+POST  http://localhost:3000/user/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":"zhangsan"
+}
+
+###
+# 测试退出接口
+POST  http://localhost:3000/user/logout HTTP/1.1
+
+###
+# 获取用户信息
+GET  http://localhost:3000/user/getUser HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiemhhbmdzYW4iLCJleHAiOjE2NzUyNDgyNTYsImlhdCI6MTY3NTI0NDY1Nn0.c2HKmhI1zCMFh15cHbZyDloADHh5mfX4IYMawgQPjSg
+
+###
+# 测试文件上传
+POST  http://localhost:3000/test/upload HTTP/1.1
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="text"
+
+title
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="note.pdf"
+Content-Type: application/pdf
+
+< ./note.pdf
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### 
+# 表单校验  
+POST http://localhost:3000/form-checker HTTP/1.1
+Content-Type: application/json
+
+# {
+#     "name":"行三"
+# }
+
+### 
+GET http://localhost:3000/user HTTP/1.1
+
+### 
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"wc",
+    "age":10
+}
+
+### 
+PUT http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"1",
+    "name":"wc-wc",
+    "age":10
+}
+
+### 
+DELETE  http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"1"
+}
