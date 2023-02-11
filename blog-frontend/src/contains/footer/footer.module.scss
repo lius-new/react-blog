@@ -1,0 +1,14 @@
+.footer-content-wrappre{
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+
+    & .create-time{
+        font-size: 0.775rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

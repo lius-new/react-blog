@@ -1,0 +1,16 @@
+div.content-wrapper{
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+
+    & *{
+        transition: all .3s ease-in-out;
+    }
+
+}
+
+@media screen and (min-width:762px){
+    div.content-wrapper{
+        margin: 0 auto;
+    }
+}

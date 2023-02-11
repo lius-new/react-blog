@@ -1,0 +1,40 @@
+div.drawer-wrapper{
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    right: 0;
+    background-color: var(--color-bg);
+    transition: all .3s ease-in-out;
+
+    & .drawer-content{
+        height: inherit;
+        * a{
+            color: var(--color-text);
+        }
+    }
+
+    &  .drawer-close{
+        position: absolute;
+        top: 12px;
+        right: 12px;
+
+        & .drawer-close-btn{
+            width: 36px;
+            height: 36px;
+            border: none;
+            background-color: var(--color-bg);
+            box-shadow: 2px 0px 15px 9px rgba(0,0,0,0.1);
+            padding: 4px;
+            border-radius: 19%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 5.2rem;
+            color: var(--color-text);
+        }
+    }
+
+}

@@ -1,0 +1,81 @@
+// modal 内容展示区域
+.modal {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--color-bg);
+    border-radius: 24px;
+    padding: 12px 12px 24% 12px;
+
+    overflow: hidden scroll;
+    transition: all .3s ease-in-out;
+    & *{
+        transition: all .3s ease-in-out;
+    }
+}
+
+.modal .close-wrapper{
+    padding: 64px 0;
+    display: flex;
+    justify-content: flex-end;
+
+    & .close-btn{
+        border: none;
+        outline: none;
+        background-color: white;
+        background-color: var(--color-btn);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 1.025rem;
+        color: var(--color-text);
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: var(--color-btn) 0px 1px 6px, var(--color-btn) 0px 0px 0px 3px;
+        }
+    }
+
+}
+
+// modal中内容展示的外边框
+.overlay {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-modal);
+}
+
+@media screen and (min-width:762px) and (max-width:999px){
+    .modal {
+        top: 20px;
+        left: 8%;
+        right: 8%;
+    }
+}
+@media screen and (min-width:999px) and (max-width:1312px){
+    .modal {
+        top: 20px;
+        left: 12%;
+        right: 12%;
+    }
+}
+@media screen and (min-width:1312px) and (max-width:1618px){
+    .modal {
+        top: 20px;
+        left: 20%;
+        right: 20%;
+    }
+}
+@media screen and (min-width:1618px){
+    .modal {
+        top: 20px;
+        left: 24%;
+        right: 24%;
+    }
+}
