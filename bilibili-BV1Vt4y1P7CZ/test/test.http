@@ -85,3 +85,20 @@ Content-Type: application/json
 {
     "id":"1"
 }
+
+###
+# 测试分页
+GET  http://localhost:3000/students?pageSize=2&pageIndex=2 HTTP/1.1
+
+###
+# 全部数据
+GET  http://localhost:3000/students HTTP/1.1
+
+###
+# 删除数据
+DELETE  http://localhost:3000/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"63f30be21d6b9a4a1c92fdc3"
+}

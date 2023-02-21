@@ -15,3 +15,6 @@
 - test13: 跨域
 - test14: 文件上传
 - test15: 表单校验
+- test16: 生成验证码和图片
+- test17: restful风格
+- test18: js对mongodb的基本操作
