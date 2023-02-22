@@ -1,0 +1,20 @@
+###
+# get blog
+GET http://localhost:3000/blogs HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"63f5c297d07e5042fece83be"
+}
+
+###
+# save blog
+POST http://localhost:3000/blogs HTTP/1.1
+
+###
+# delete blog
+DELETE http://localhost:3000/blogs HTTP/1.1
+
+###
+# update blog
+PUT http://localhost:3000/blogs HTTP/1.1
