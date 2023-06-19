@@ -45,16 +45,10 @@ src/
 |  └index.js
 ├─contains                                  # 与页面相关的组件
 |    ├─index.js
-|    ├─layout.jsx
-|    ├─header
-|    |   ├─header.module.scss
-|    |   └index.jsx
-|    ├─footer
-|    |   ├─footer.module.scss
-|    |   └index.jsx
-|    ├─blog
-|    |  ├─blog.module.scss
-|    |  └index.jsx
+|    ├─layout.jsx                           # 布局组件
+|    ├─header                               # header组件
+|    ├─footer                               # footer组件
+|    ├─blog                                 # blog组件
 ├─components                                # 全局通用组件
 |     ├─index.js
 |     ├─theme                               # 主题
