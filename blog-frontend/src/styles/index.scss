@@ -1,55 +1,55 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-@font-face{
-    font-family: roboto;
-    src: url("../assets/fonts/Roboto/Roboto-Light.ttf");
+@font-face {
+  font-family: roboto;
+  src: url("../assets/fonts/Roboto/Roboto-Light.ttf");
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 // color theme: https://mybrandnewlogo.com/color-palette-generator
 
-:root{
-    font-family: roboto,sans-serif;
-    font-size: 18px;
-    overflow-x: hidden;
-    --color-bg:white;
-    --color-text:black;
-    --color-btn:white;
-    --color-modal: #ccc;
+:root {
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+  --color-bg: white;
+  --color-text: black;
+  --color-btn: white;
+  --color-modal: #fff;
 }
 
-:root[theme='light-1']{
-    --color-5: #c9d3e8;
-    --color-bg: #f3f3f3;
-    --color-text: #1d202f;
-    --color-btn: #79787e;
-    --color-modal: #e5e5e5;
+:root[theme="light-1"] {
+  --color-5: #c9d3e8;
+  --color-bg: #f3f3f3;
+  --color-text: #1d202f;
+  --color-btn: #79787e;
+  --color-modal: #e4e1e1;
 }
-:root[theme='light-2']{
-    --color-5: #5e4269;
-    --color-bg: #ec8ebc;
-    --color-text: #372e49;
-    --color-btn: #98638c;
-    --color-modal: #f8bbe1;
-}
-
-:root[theme='dark-1']{
-    --color5: #94c2cc;
-    --color-bg: #132232;
-    --color-text: #deeded;
-    --color-btn: #367f96;
-    --color-modal: #534960;
+:root[theme="light-2"] {
+  --color-5: #5e4269;
+  --color-bg: #ec8ebc;
+  --color-text: #372e49;
+  --color-btn: #98638c;
+  --color-modal: #f8bbe1;
 }
 
-:root[theme='dark-2']{
-    --color5: #000000;
-    --color-bg: #292c3a;
-    --color-text: #5d617f;
-    --color-btn: #42455b;
-    --color-modal: #14151d;
+:root[theme="dark-1"] {
+  --color5: #94c2cc;
+  --color-bg: #132232;
+  --color-text: #deeded;
+  --color-btn: #367f96;
+  --color-modal: #534960;
+}
+
+:root[theme="dark-2"] {
+  --color5: #000000;
+  --color-bg: #292c3a;
+  --color-text: #5d617f;
+  --color-btn: #42455b;
+  --color-modal: #14151d;
 }

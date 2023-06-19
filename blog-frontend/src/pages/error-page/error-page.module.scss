@@ -1,0 +1,35 @@
+.error-container {
+  width: 92%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  & .error-header {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 526px) and (max-width: 762px) {
+  .error-container {
+    width: 84vw;
+  }
+}
+@media screen and (min-width: 762px) and (max-width: 999px) {
+  .error-container {
+    width: 82vw;
+  }
+}
+@media screen and (min-width: 999px) and (max-width: 1312px) {
+  .error-container {
+    width: 64vw;
+  }
+}
+@media screen and (min-width: 1312px) {
+  .error-container {
+    width: 52vw;
+    height: 60vh;
+  }
+}
