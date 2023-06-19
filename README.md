@@ -57,36 +57,15 @@ src/
 |    |  └index.jsx
 ├─components                                # 全局通用组件
 |     ├─index.js
-|     ├─theme
-|     |   └index.jsx
-|     ├─positive-seventeen
-|     |         └index.jsx
-|     ├─menu-icon
-|     |     ├─index.jsx
-|     |     └menuIcon.module.scss
-|     ├─drawer
-|     |   ├─drawer.module.scss
-|     |   └index.jsx
-|     ├─blog-modal
-|     |     ├─blogModal.module.scss
-|     |     └index.jsx
+|     ├─theme                               # 主题
+|     ├─positive-seventeen              
+|     ├─menu-icon                           # 菜单的icon
+|     ├─drawer                              # 抽屉组件
+|     ├─blog-modal                          # 博客的modal
 ├─assets
 |   ├─react.svg
 |   ├─fonts
-|   |   ├─Roboto
-|   |   |   ├─LICENSE.txt
-|   |   |   ├─Roboto-Black.ttf
-|   |   |   ├─Roboto-BlackItalic.ttf
-|   |   |   ├─Roboto-Bold.ttf
-|   |   |   ├─Roboto-BoldItalic.ttf
-|   |   |   ├─Roboto-Italic.ttf
-|   |   |   ├─Roboto-Light.ttf
-|   |   |   ├─Roboto-LightItalic.ttf
-|   |   |   ├─Roboto-Medium.ttf
-|   |   |   ├─Roboto-MediumItalic.ttf
-|   |   |   ├─Roboto-Regular.ttf
-|   |   |   ├─Roboto-Thin.ttf
-|   |   |   └Roboto-ThinItalic.ttf
+|   |   ├─Roboto                            # 字体
 ```
 
 #### 前端使用
